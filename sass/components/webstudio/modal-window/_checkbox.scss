@@ -1,0 +1,49 @@
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+
+  .checkbox__castom {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(---basic-cubic-bezier);
+  }
+
+  &__input:checked + .checkbox__castom {
+  background-color: #2196f3;
+  }
+
+  .checkbox__icon {
+  padding: 0px;
+  margin: 0px;
+  fill: #FFFFFF;
+  }
+
+  .checkbox__agrement {
+  font-size: 14px;
+  margin-left: 9px;
+  }
+
+  .checkbox__link {
+  font-size: 14px;
+  line-height: 1.7px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(---basic-cubic-bezier);
+  }
+
+}
