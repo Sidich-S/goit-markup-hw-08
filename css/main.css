@@ -1112,11 +1112,6 @@ ul {
       flex-wrap: wrap;
   gap: 30px;
 }
-.gallery .gallery__item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
 .gallery .gallery__item:nth-child(3n) {
   margin-right: 0px;
 }
