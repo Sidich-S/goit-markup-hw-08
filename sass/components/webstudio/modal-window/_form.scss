@@ -1,0 +1,122 @@
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .form__title {
+  margin: 0;
+  margin-bottom: 12px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  
+  color: var(--secondary-color);
+  }
+
+  .form__group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(---basic-cubic-bezier);
+  }
+
+  .form__group > label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+  }
+
+  .form__group > input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding-left: 40px;
+  outline: transparent;
+  
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(---basic-cubic-bezier);
+  }
+
+  .form__group > textarea {
+  width: 448px;
+  height: 120px;
+  margin-bottom: 20px;
+  margin-top: 4px;
+  padding: 12px 16px;
+  resize: none;
+  outline: transparent;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  cursor: pointer;
+  transition-property: border, outline;
+  transition-duration: 250ms;
+  transition-timing-function: var(---basic-cubic-bezier);
+  }
+ 
+  &__group:hover,
+  &__group:focus-within,
+  &__input:hover,
+  &__input:focus-within,
+  &__textarea:hover,
+  &__textarea:focus-within {
+  fill: var(--third-color);
+  border-color: var(--third-color);
+  cursor: pointer;
+  }
+
+  .form__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  }
+
+  .form__block {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  }
+
+  .form__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8px;
+  letter-spacing: 0.06em;
+  
+  color: #FFFFFF;
+  background: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  transition-property: background, color;
+  transition-duration: 250ms;
+  transition-timing-function: var(---basic-cubic-bezier);
+  
+   &:hover,
+   &:focus {
+   cursor: pointer;
+   }
+  }
+}

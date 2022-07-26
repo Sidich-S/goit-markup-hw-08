@@ -1,0 +1,28 @@
+
+.logo,
+.web {
+  color: var(--secondary-color);
+  padding: 0px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  text-decoration: none;
+}
+
+.web {
+  color: var(--third-color);
+}
+
+.studio {
+  color: var(--final-color);
+
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}

@@ -1,0 +1,36 @@
+.work {
+  display: inline-block;
+  display: flex;
+  padding-top: 0px;
+  margin-bottom: 94px;
+
+
+  .work__wrapper {
+  position: relative;
+  }
+
+  .work__img {
+  display: block;
+  }
+
+  .work__name {
+  position: absolute; 
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  bottom: 0;
+  left: 0;
+  margin: 0px;
+  
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #F5F4FA;
+  background: rgba(47, 48, 58, 0.8);
+  }
+}
