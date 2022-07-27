@@ -40,6 +40,12 @@ ul {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section,
 .portfolio {
   padding-top: 94px;
@@ -94,7 +100,6 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1200px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -145,6 +150,10 @@ ul {
 
 .menu__button.is-open .icon-cross {
   display: block;
+}
+
+.menu__button.is-open .icon-menu {
+  display: none;
 }
 
 .logo,
@@ -1129,6 +1138,9 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+}
+.gallery .gallery__item {
+  width: 370px;
 }
 .gallery .gallery__item:nth-child(3n) {
   margin-right: 0px;

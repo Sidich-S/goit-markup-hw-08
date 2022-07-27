@@ -21,7 +21,7 @@
 
 <body class="body">
   <!-- ? header -->
-  <header class="header">
+  <!-- <header class="header">
         <div class="header__block container">
             <nav class="nav">
                 <a class="logo" href="/"> <span class="web">Web</span>Studio</a>
@@ -59,27 +59,66 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </header> -->
 
   <!-- ? main -->
   <main>
     <!-- section portfolio -->
     <section class="portfolio">
 
-      <!-- <h1>ПОРТФОЛИО</h1>
+      <!-- <h1>ПОРТФОЛИО</h1> -->
       <div class="container">
-        <ul class="selector">
+        <!-- <ul class="selector">
           <li class="selector__item"><button type="button" class="selector__btn">Все</button></li>
           <li class="selector__item"><button type="button" class="selector__btn">Веб-сайты</button></li>
           <li class="selector__item"><button type="button" class="selector__btn">Приложения</button></li>
           <li class="selector__item"><button type="button" class="selector__btn">Дизайн</button></li>
           <li class="selector__item"><button type="button" class="selector__btn">Маркетинг</button></li>
-        </ul>
+        </ul> -->
         <ul class="gallery">
           <li class="gallery__item">
             <a class="gallery__link" href="/">
               <div class="overlay">
-                <img src="./images/techhryack.jpg" alt="технокряк" width="370" style="display: block" />
+                <picture>
+                <!-- desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img_lg.webp 1x, ./images/img-portfolio/img_lg@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img_lg.jpg 1x, ./images/img-portfolio/img_lg@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img_md.webp 1x, ./images/img-portfolio/img_md@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img_md.jpg 1x, ./images/img-portfolio/img_md@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img_sm.webp 1x, ./images/img-portfolio/img_sm@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img_sm.jpg 1x, ./images/img-portfolio/img_sm@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<img src="./images/techhryack.jpg" alt="технокряк" width="370" height="294" />
+
+             </picture>
+                
                 <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
               </div>
@@ -92,7 +131,45 @@
           <li class="gallery__item">
             <a class="gallery__link" href="/">
                <div class="overlay">
-                <img src="./images/poster.jpg" alt="New Orlean vs Golden Star" width="370" style="display: block" />
+                 <picture>
+                <!-- desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-1_lg.webp 1x, ./images/img-portfolio/img-1_lg@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-1_lg.jpg 1x, ./images/img-portfolio/img-1_lg@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-1_md.webp 1x, ./images/img-portfolio/img-1_md@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-1_md.jpg 1x, ./images/img-portfolio/img-1_md@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-1_sm.webp 1x, ./images/img-portfolio/img-1_sm@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-1_sm.jpg 1x, ./images/img-portfolio/img-1_sm@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<img src="./images/poster.jpg" alt="New Orlean vs Golden Star" width="370" height="294" />
+             </picture>
+                
                 <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                </div> 
@@ -105,7 +182,45 @@
           <li class="gallery__item">
             <a class="gallery__link" href="/">
                <div class="overlay">
-                 <img src="./images/restoran.jpg" alt="Seafood" width="370" style="display: block" />
+                   <picture>
+                <!-- desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-2_lg.webp 1x, ./images/img-portfolio/img-2_lg@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-2_lg.jpg 1x, ./images/img-portfolio/img-2_lg@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-2_md.webp 1x, ./images/img-portfolio/img-2_md@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-2_md.jpg 1x, ./images/img-portfolio/img-2_md@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-2_sm.webp 1x, ./images/img-portfolio/img-2_sm@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-2_sm.jpg 1x, ./images/img-portfolio/img-2_sm@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<img src="./images/restoran.jpg" alt="Seafood" width="370" height="294" />
+             </picture>
+
                  <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                </div>
@@ -118,7 +233,45 @@
           <li class="gallery__item">
             <a class="gallery__link" href="/">
                <div class="overlay">
-                 <img src="./images/project.jpg" alt="Prime" width="370" style="display: block" />
+                 <picture>
+                <!-- desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-3_lg.webp 1x, ./images/img-portfolio/img-3_lg@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-3_lg.jpg 1x, ./images/img-portfolio/img-3_lg@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-3_md.webp 1x, ./images/img-portfolio/img-3_md@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-3_md.jpg 1x, ./images/img-portfolio/img-3_md@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-3_sm.webp 1x, ./images/img-portfolio/img-3_sm@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-3_sm.jpg 1x, ./images/img-portfolio/img-3_sm@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<img src="./images/project.jpg" alt="Prime" width="370" height="294" />
+             </picture>
+
                  <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                </div>
@@ -131,7 +284,45 @@
           <li class="gallery__item">
             <a class="gallery__link" href="/">
                 <div class="overlay">
-                  <img src="./images/boxes.jpg" alt="Boxes" width="370" style="display: block" />
+                  <picture>
+                <!-- desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-4_lg.webp 1x, ./images/img-portfolio/img-4_lg@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-4_lg.jpg 1x, ./images/img-portfolio/img-4_lg@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-4_md.webp 1x, ./images/img-portfolio/img-4_md@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-4_md.jpg 1x, ./images/img-portfolio/img-4_md@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-4_sm.webp 1x, ./images/img-portfolio/img-4_sm@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-4_sm.jpg 1x, ./images/img-portfolio/img-4_sm@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								 <img src="./images/boxes.jpg" alt="Boxes" width="370" height="294" />
+             </picture>
+
                   <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                </div>
@@ -144,7 +335,45 @@
           <li class="gallery__item">
             <a class="gallery__link" href="/">
                 <div class="overlay">
-                  <img src="./images/borders.jpg" alt="Borders" width="370" style="display: block" />
+                  <picture>
+                <!-- desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-5_lg.webp 1x, ./images/img-portfolio/img-5_lg@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-5_lg.jpg 1x, ./images/img-portfolio/img-5_lg@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-5_md.webp 1x, ./images/img-portfolio/img-5_md@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-5_md.jpg 1x, ./images/img-portfolio/img-5_md@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-5_sm.webp 1x, ./images/img-portfolio/img-5_sm@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-5_sm.jpg 1x, ./images/img-portfolio/img-5_sm@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								 <img src="./images/borders.jpg" alt="Borders" width="370" height="294" />
+             </picture>
+
                   <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -157,7 +386,45 @@
           <li class="gallery__item">
             <a class="gallery__link" href="/">
                 <div class="overlay">
-                   <img src="./images/Limited Edition.jpg" alt="Limited Edition" width="370" style="display: block" />
+                   <picture>
+                <!-- desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-6_lg.webp 1x, ./images/img-portfolio/img-6_lg@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-6_lg.jpg 1x, ./images/img-portfolio/img-6_lg@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-6_md.webp 1x, ./images/img-portfolio/img-6_md@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-6_md.jpg 1x, ./images/img-portfolio/img-6_md@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-6_sm.webp 1x, ./images/img-portfolio/img-6_sm@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-6_sm.jpg 1x, ./images/img-portfolio/img-6_sm@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								 <img src="./images/Limited Edition.jpg" alt="Limited Edition" width="370" height="294" />
+             </picture>
+
                    <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -170,7 +437,45 @@
           <li class="gallery__item">
             <a class="gallery__link" href="/">
                 <div class="overlay">
-                  <img src="./images/LAB.jpg" alt="LAB" width="370" style="display: block" />
+                   <picture>
+                <!-- desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-7_lg.webp 1x, ./images/img-portfolio/img-7_lg@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-7_lg.jpg 1x, ./images/img-portfolio/img-7_lg@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-7_md.webp 1x, ./images/img-portfolio/img-7_md@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-7_md.jpg 1x, ./images/img-portfolio/img-7_md@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-7_sm.webp 1x, ./images/img-portfolio/img-7_sm@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-7_sm.jpg 1x, ./images/img-portfolio/img-7_sm@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								 <img src="./images/LAB.jpg" alt="LAB" width="370" height="294" />
+             </picture>
+
                   <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>          
                 </div>
@@ -183,7 +488,45 @@
           <li class="gallery__item">
             <a class="gallery__link" href="/">
                 <div class="overlay">
-                   <img src="./images/Growing Business.jpg" alt="Growing Business" width="370" style="display: block" />
+                  <picture>
+                <!-- desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-8_lg.webp 1x, ./images/img-portfolio/img-8_lg@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/img-portfolio/img-8_lg.jpg 1x, ./images/img-portfolio/img-8_lg@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-8_md.webp 1x, ./images/img-portfolio/img-8_md@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/img-portfolio/img-8_md.jpg 1x, ./images/img-portfolio/img-8_md@2x.jpg 2x"
+									type="image/jpg"
+								/>
+
+								<!-- mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-8_sm.webp 1x, ./images/img-portfolio/img-8_sm@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/img-portfolio/img-8_sm.jpg 1x, ./images/img-portfolio/img-8_sm@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								 <img src="./images/Growing Business.jpg" alt="Growing Business" width="370" height="294" />
+             </picture>
+
                    <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -195,10 +538,10 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
   </main>
 
-  <!-- ? footer -->
+  <!-- ? footer
    <footer class="footer">
         <div class="footer__block container">
             <div>
@@ -259,7 +602,7 @@
             </div>
         </div>
 
-    </footer>
+    </footer> -->
 
 </body>
 

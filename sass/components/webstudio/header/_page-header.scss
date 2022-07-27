@@ -28,3 +28,7 @@ background-color: transparent;
 .menu__button.is-open .icon-cross {
   display: block;
 }
+
+.menu__button.is-open .icon-menu {
+  display: none;
+}
