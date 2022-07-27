@@ -12,3 +12,19 @@
   }
 
 }
+
+.menu__button {
+display: inline-flex;
+margin: 0px;
+padding: 0px;
+border: none;
+background-color: transparent;
+}
+
+.menu__button .icon-cross {
+  display: none;
+}
+
+.menu__button.is-open .icon-cross {
+  display: block;
+}
