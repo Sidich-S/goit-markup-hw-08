@@ -1,13 +1,36 @@
 
 .advantage {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
 
 
-  .advantage__icon {
+  .advantage__item {
+     @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    
+    .advantage__icon, .advantage__text {
+      width: 354px;
+    }
+
+   }
+
+   @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   }
+
+    .advantage__icon {
   background-color: var(--secondary-background-color);
 
   display: flex;
