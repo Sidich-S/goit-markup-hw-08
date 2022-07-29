@@ -58,14 +58,14 @@ img {
 
 .section {
 
-  
+  @media screen and (min-width: 480px) {
+    padding-bottom: 0px;
+   }
 }
-Ї
-
-
 
 .item {
 margin-right: 30px;
+
 }
 
 .item:last-child {
