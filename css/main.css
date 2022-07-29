@@ -52,12 +52,6 @@ img {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) {
-  .section {
-    padding-bottom: 0px;
-  }
-}
-
 .item {
   margin-right: 30px;
 }
@@ -365,25 +359,50 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .advantage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .advantage__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
+  margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) {
   .advantage__item {
-    width: calc((100% - 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .advantage__item {
-    width: calc((100% - 90px) / 4);
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
-
-.advantage__icon {
+.advantage .advantage__icon {
   background-color: var(--secondary-background-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,7 +415,22 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-.advantage__icon .advantage__title {
+@media screen and (min-width: 480px) {
+  .advantage .advantage__icon {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantage .advantage__icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage .advantage__icon {
+    width: 270px;
+  }
+}
+.advantage .advantage__icon .advantage__title {
   font-family: var(--basic-font-family);
   color: var(--secondary-color);
   margin-top: 30px;
@@ -407,11 +441,12 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.advantage__icon .advantage__text {
+.advantage .advantage__icon .advantage__text {
   font-family: var(--basic-font-family);
   color: var(--basiс-color);
   margin-top: 0px;
   margin-bottom: 0px;
+  padding: 0px;
   width: 270px;
   line-height: 1.7;
   letter-spacing: 0.03em;
