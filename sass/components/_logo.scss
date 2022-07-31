@@ -3,7 +3,7 @@
 .web {
   color: var(--secondary-color);
   padding: 0px;
-  padding-top: 24px;
+  // padding-top: 24px;
   // padding-bottom: 25px;
 
   font-family: 'Raleway';
@@ -13,14 +13,30 @@
 
   text-decoration: none;
 
-
-  @media screen and (min-width: 768px) {
-     padding-top: 0px;
+  @media screen and (max-width: 767px) {
+     padding: 0px;
+         
      }
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+
+  // @media screen and (max-width: 767px) {
+  //  display: flex;
+  //  margin: 0px;
+  // }
+
+  }
+
 .web {
   color: var(--third-color);
+
+  // @media screen and (max-width: 767px) {
+  // padding: 0px;
+  // margin: 0px;
+  // }
 }
 
 .studio {

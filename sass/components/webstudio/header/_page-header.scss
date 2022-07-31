@@ -1,34 +1,28 @@
 .header {
   display: flex;
   align-items: center;
-
   border-bottom: 1px solid #ececec;
   border-left: none;
-
+  
 
   &__block {
-  display: inline-block;
   display: flex;
+  width: 100%;
+  padding: 0px;
+
+    @media screen and (max-width: 767px) {
+    width: 420px;
+    display: flex;
+    justify-content: space-between    
+    }
+  
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    max-width: 738px;
+    display: flex;
+       
+    }
   }
-
 }
 
-.menu__button {
-display: inline-flex;
-margin: 0px;
-padding: 0px;
-border: none;
-background-color: transparent;
-}
 
-.menu__button .icon-cross {
-  display: none;
-}
-
-.menu__button.is-open .icon-cross {
-  display: block;
-}
-
-.menu__button.is-open .icon-menu {
-  display: none;
-}

@@ -8,9 +8,9 @@
     .customers__item {
       display: flex;
       justify-content: center;
-    }
+    
   
-    .customers__link {
+        .customers__link {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -45,13 +45,14 @@
 	         width: 170px;
            }
       }
-
+    }
+} 
       .customers__icon {
         fill: #AFB1B8;
-
-         &:hover, 
-         &:focus {
+       }
+         .customers__icon:hover, 
+         .customers__icon:focus {
           fill: #2196f3;
           }
-        }
-} 
+        
+

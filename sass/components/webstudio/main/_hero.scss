@@ -4,14 +4,18 @@
   background-color: #2F303A;
   background-repeat: no-repeat;
   background-position: center;
-   background-size: cover;
-  max-width: 1600px;
+  background-size: cover;
+  width: 100%;
   margin: 0 auto;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
   url(../images/img-hero/Header-img_480.jpg);
  
   // Для екранів mobile
+  @media screen and (max-width: 767px) {
+   max-width: 480px; 
+  }
+
   @media (min-device-pixel-ratio: 2),
 		(-webkit-min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
@@ -21,6 +25,7 @@
 
    // Для екранів tablet
 	@media screen and (min-width: 768px) {
+      max-width: 768px;
 		background-image: url(../images/img-hero/Header-img_768.jpg);
 
 		
@@ -34,8 +39,9 @@
 
    // Для екранів desktop
 	@media screen and (min-width: 1200px) {
+      max-width: 1600px;
 		background-image: url(../images/img-hero/Header-img_1600.jpg);
-        padding: 200px 0;
+      padding: 200px 0;
 
 		
 		@media (min-device-pixel-ratio: 2),
