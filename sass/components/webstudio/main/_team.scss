@@ -10,6 +10,10 @@
   justify-content: center;
   gap: 30px;
   
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+   }
 }
 
 .user__item {
@@ -31,13 +35,7 @@
     align-items: center;
     width: calc((100% - 30px) / 2);
    }
-
-   @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    
-   }
-  
+ 
 }
 
 .user__photo {

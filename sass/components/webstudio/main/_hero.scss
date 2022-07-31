@@ -1,31 +1,81 @@
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-  url(../images/Img.png);
+  padding: 118px 0px;
+  background-color: #2F303A;
   background-repeat: no-repeat;
   background-position: center;
+   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  url(../images/img-hero/Header-img_480.jpg);
  
+  // Для екранів mobile
+  @media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: url(../images/img-hero/Header-img2x_480.jpg);
+	}
+
+   // Для екранів tablet
+	@media screen and (min-width: 768px) {
+		background-image: url(../images/img-hero/Header-img_768.jpg);
+
+		
+		@media (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: url(../images/img-hero/Header-img2x_768.jpg);
+		}
+	}
+
+   // Для екранів desktop
+	@media screen and (min-width: 1200px) {
+		background-image: url(../images/img-hero/Header-img_1600.jpg);
+        padding: 200px 0;
+
+		
+		@media (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: url(../images/img-hero/Header-img2x_1600.jpg);
+		}
+	}
+
+  
+  .hero__title-box {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 30px;
+  }
 
   .hero__title {
   font-family: var(--basic-font-family);
   color: var(--final-color);
 
-  margin: 0px auto;
-  margin-bottom: 30px;
-  width: 696px;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-weight: 700;      
+  font-size: 26px;
+  line-height: 1.3;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
+  
+  width: 650px;
+  text-align: center;
+        
+  @media screen and (min-width: 768px) {
+         font-size: 28px;
+        }
+
+  @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        }
   }
 }
-
 
 .button {
   font-family: var(--basic-font-family);
