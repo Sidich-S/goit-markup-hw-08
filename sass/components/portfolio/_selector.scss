@@ -3,6 +3,23 @@
   justify-content: center;
   margin-top: 0px;
   margin-bottom: 50px;
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+     margin: 0px;
+     margin-bottom: 40px;
+
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     
+     min-width: 320px;
+     width: 450px;
+    }
+
+   @media screen and (min-width: 768px) {
+     margin-bottom: 30px;
+    }
 
 
   .selector__item {
@@ -11,6 +28,17 @@
    &:last-child {
    margin-right: 0px;
    }
+  
+   @media screen and (max-width: 767px) {
+     margin: 0px;
+     margin-right: 8px;
+     margin-bottom: 15px;
+
+     &:last-child {
+     margin-right: 0px;
+     }
+    }
+
   }
 
   .selector__btn {

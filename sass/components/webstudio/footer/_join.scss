@@ -14,7 +14,7 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
     }
 
   @media screen and (min-width: 1200px) {
@@ -27,7 +27,8 @@
 .join__title {
   display: inline-block;
   margin-bottom: 20px;
-  
+
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
