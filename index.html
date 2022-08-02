@@ -25,14 +25,24 @@
         <div class="header__block container">
 
            <nav class="nav">
+
              <a class="logo" href="/"> <span class="web">Web</span>Studio</a>
-                
+
+                 <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+
+                   <svg class="menu-toggle__icon" width="40" height="40">
+                      <use class="icon-menu" href="./images/icon.svg#icon-menu_24px"></use>
+                      <use class="icon-close" href="./images/icon.svg#icon-close_24px"></use>
+                   </svg>
+
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link nav__link--current">Студия</a></li>
                     <li class="nav__item"><a href="portfolio.html" class="nav__link">Портфолио</a></li>
                     <li class="nav__item"><a href="/" class="nav__link">Контакты</a></li>
                 </ul>
            </nav>
+
+
             <ul class="contacts">
                 <li class="contacts__item">
                     <a class="contacts__link contacts__mail" href="mailto:info@devstudio.com">
@@ -49,54 +59,7 @@
             </ul>
         </div>
 
-        <!-- Приховане меню -->
-        <div class="hidden-menu__btn"></div>
-         <button type="button" class="header-btn is-open" data-menu-button>
-                   <svg class="header-btn__icon" width="40" height="40">
-                      <use class="icon-menu" href="./images/icon.svg#icon-menu_24px"></use>
-                      <use class="icon-close" href="./images/icon.svg#icon-close_24px"></use>
-                   </svg>
-         </button>
-        </div>
-    <div class="hiddenmenu is-hidden" data-menu>
-        <div class="hidden-menu">
-
-         
-           
-          
-
-          <div class="hidden-menu__link">
-            <ul class="hidden-menu__list">
-              <li class="hidden-menu__item">Студия</li>
-              <li class="hidden-menu__item">Портфолиоli> 
-              <li class="hidden-menu__item">Контакты</li>
-            </ul>
-          </div>
-
-          <div class="hidden-menu__contacts">
-             <ul class="hidden-menu__contacts">
-                <li>+380961111111</li>
-                <li>info@devstudio.com</li>
-            </ul>
-          </div>
-
-          <div>
-             <ul>
-               <li>instagram</li>
-               <li>twitter</li>
-               <li>facebook</li>
-               <li>linkedin</li>
-               </ul>
-          </div>
-        </div>
-
-    </div>
-
-      
-
-
-
-    </header>
+</header>
 
     <!-- ? main -->
     <main> 
@@ -656,9 +619,50 @@
       </div> 
     </div>
 
+     <!-- ? hiddenmenu -->
+        
+    <div class="hiddenmenu js-menu-container" id="mobile-menu">
+
+      <button type="button" class="menu-toggle js-close-menu"> </button>
+        
+        <div class="mobile-menu">
+
+          <div class="mobile-menu__link">
+             <ul class="mobile-menu__list">
+               <li class="mobile-menu__item">Студия</li>
+               <li class="mobile-menu__item">Портфолиоli> 
+               <li class="mobile-menu__item">Контакты</li>
+             </ul>
+          </div>
+
+          <div class="mobile-menu__contacts">
+             <ul class="">
+                <li>+380961111111</li>
+                <li>info@devstudio.com</li>
+             </ul>
+          </div>
+
+          <div>
+             <ul>
+               <li>instagram</li>
+               <li>twitter</li>
+               <li>facebook</li>
+               <li>linkedin</li>
+               </ul>
+          </div>
+
+        </div>
+
+    </div>
 
 
-    <script src="./js/menu.js"></script>
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+    </script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

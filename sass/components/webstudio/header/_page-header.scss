@@ -26,7 +26,7 @@
   }
 }
 
-.header-btn {
+.menu-toggle {
   position: absolute;
   right: 15px;
   top: 10px;
@@ -41,28 +41,23 @@
       display: none;
   }
 
-  &.is-open{
-  position: fixed;
-}
+  
 }
 
-
-
-
-.header-btn .icon-close {
+.menu-toggle.is-open .icon-close {
   display: none;
 }
 
-.header-btn.is-open .icon-close {
+.menu-toggle.is-open .icon-close {
   display: block;
 }
 
-.header-btn.is-open .icon-menu {
+.menu-toggle.is-open .icon-menu {
   display: none;
 }
 
 
-.header-btn__icon {
+.menu-toggle__icon {
   width: 24px;
   height: 16px;
   display: inline-flex;
