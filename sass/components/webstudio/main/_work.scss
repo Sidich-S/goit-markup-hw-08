@@ -1,4 +1,10 @@
 .work {
+@media screen and (max-width: 1199px) {
+		  display: none;
+	    }
+}
+
+.work__list {
   display: inline-block;
   display: flex;
   padding-top: 0px;
@@ -34,3 +40,6 @@
   background: rgba(47, 48, 58, 0.8);
   }
 }
+
+
+
