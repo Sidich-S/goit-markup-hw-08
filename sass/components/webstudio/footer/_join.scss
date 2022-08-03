@@ -69,7 +69,8 @@
   margin-right: 0px;
 }
 
-.join__link {
+
+  .join__link {
   display: block;
   align-items: center;
   justify-content: center;
@@ -82,26 +83,26 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: var(---basic-cubic-bezier);
-}
+  }
 
-.join__icon {
-  fill: #F5F4FA;
-}
 
-.join__link:hover .card-icon,
-.join__link:focus .card-icon {
-  fill: #F5F4FA;
-}
-
-.join__link--anime {
+ .join__link-anime {
   background-color: #474a50;
-
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: var(---basic-cubic-bezier);
-}
-.join__link--anime:hover,
-.join__link--anime:focus {
+  }
+
+
+ .join__link:hover,
+ .join__link:focus {
   background-color: #2196F3;
   cursor: pointer;
-}
+  }
+
+  .join__icon {
+  fill: #F5F4FA;
+  }
+
+ 
+

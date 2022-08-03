@@ -292,15 +292,10 @@ ul {
   position: absolute;
   width: 100%;
   height: 4px;
-  bottom: 1px;
+  bottom: -2px;
   left: 0;
   border-radius: 2px;
   background-color: #2196f3;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav__link--current::after {
-    bottom: -1px;
-  }
 }
 .nav__link:hover, .nav__link:focus {
   color: var(--third-color);
@@ -789,8 +784,8 @@ ul {
   fill: #F5F4FA;
 }
 
-.card__link--anime:hover,
-.card__link--anime:focus {
+.card__link-anime:hover,
+.card__link-anime:focus {
   background-color: #2196f3;
   cursor: pointer;
 }
@@ -811,7 +806,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.customers .customers__item .customers__link {
+.customers .customers__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,34 +829,28 @@ ul {
   -webkit-transition-timing-function: var(---basic-cubic-bezier);
           transition-timing-function: var(---basic-cubic-bezier);
 }
-.customers .customers__item .customers__link:hover, .customers .customers__item .customers__link:focus {
+.customers .customers__link:hover, .customers .customers__link:focus {
   color: #2196f3;
   border: 1px solid #2196F3;
   outline: none;
 }
 @media screen and (max-width: 767px) {
-  .customers .customers__item .customers__link {
+  .customers .customers__link {
     width: 210px;
   }
 }
 @media screen and (min-width: 768px) {
-  .customers .customers__item .customers__link {
+  .customers .customers__link {
     width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .customers .customers__item .customers__link {
+  .customers .customers__link {
     width: 170px;
   }
 }
-
 .customers__icon {
-  fill: #AFB1B8;
-}
-
-.customers__icon:hover,
-.customers__icon:focus {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 .footer {
@@ -1090,16 +1079,7 @@ ul {
           transition-timing-function: var(---basic-cubic-bezier);
 }
 
-.join__icon {
-  fill: #F5F4FA;
-}
-
-.join__link:hover .card-icon,
-.join__link:focus .card-icon {
-  fill: #F5F4FA;
-}
-
-.join__link--anime {
+.join__link-anime {
   background-color: #474a50;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -1109,10 +1089,14 @@ ul {
           transition-timing-function: var(---basic-cubic-bezier);
 }
 
-.join__link--anime:hover,
-.join__link--anime:focus {
+.join__link:hover,
+.join__link:focus {
   background-color: #2196F3;
   cursor: pointer;
+}
+
+.join__icon {
+  fill: #F5F4FA;
 }
 
 .subscribe {
