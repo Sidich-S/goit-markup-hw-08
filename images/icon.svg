@@ -104,6 +104,9 @@
     <symbol id="icon-close_24px" viewBox="0 0 32 32">
       <path d="M31.453 3.168l-3.168-3.168-12.56 12.558-12.558-12.558-3.168 3.168 12.558 12.558-12.558 12.56 3.168 3.168 12.558-12.56 12.56 12.56 3.168-3.168-12.56-12.56 12.56-12.558z"></path>
     </symbol>
+    <symbol id="icon-icon-line" viewBox="0 0 1 32">
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4545" d="M0.731 0v32.017"></path>
+    </symbol>
     
    </defs>
 </svg>
