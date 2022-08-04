@@ -756,7 +756,7 @@ ul {
   height: 44px;
   padding: 12px;
   background-color: white;
-  border-radius: 70%;
+  border-radius: 50%;
   -webkit-transition-property: background-color, fill;
   transition-property: background-color, fill;
   -webkit-transition-duration: 250ms;
@@ -765,8 +765,11 @@ ul {
           transition-timing-function: var(---basic-cubic-bezier);
 }
 
-.card--color {
-  background-color: #fff;
+.card__link:hover,
+.card__link:focus {
+  background-color: #2196f3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .card-icon {
@@ -786,6 +789,7 @@ ul {
 
 .card__link-anime:hover,
 .card__link-anime:focus {
+  fill: #F5F4FA;
   background-color: #2196f3;
   cursor: pointer;
 }

@@ -87,6 +87,7 @@
   margin-right: 0px;
 }
 
+
 .card__link {
   display: block;
   align-items: center;
@@ -96,16 +97,20 @@
   padding: 12px;
 
   background-color: #ffff;
-  border-radius: 70%;
+  border-radius: 50%;
 
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(---basic-cubic-bezier);
 }
 
-.card--color {
-  background-color: #fff;
+
+.card__link:hover , 
+.card__link:focus {
+   background-color: #2196f3;
+   transition-duration: 250ms;
 }
+
 
 .card-icon {
   fill: #AFB1B8;
@@ -115,13 +120,16 @@
   transition-timing-function: var(---basic-cubic-bezier);
 }
 
-.card__link:hover .card-icon,
+
+.card__link:hover .card-icon, 
 .card__link:focus .card-icon {
-  fill: #F5F4FA;
+    fill: #F5F4FA; 
 }
+
 
 .card__link-anime:hover,
 .card__link-anime:focus {
+  fill: #F5F4FA;
   background-color: #2196f3;
   cursor: pointer;
 }
