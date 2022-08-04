@@ -71,7 +71,7 @@
 
 
   .join__link {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
@@ -85,24 +85,31 @@
   transition-timing-function: var(---basic-cubic-bezier);
   }
 
+  // join__link:hover,
+  // join__link:focus {
+  //  background-color: #2196F3;
+  //  }
 
- .join__link-anime {
+   
+ .join__items .join__link-anime:hover,
+ .join__items .join__link-anime:focus {
+   background-color: #2196f3;
+    cursor: pointer;
+  }
+
+  
+  .join__link-anime {
   background-color: #474a50;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: var(---basic-cubic-bezier);
   }
 
-
- .join__link:hover,
- .join__link:focus {
-  background-color: #2196F3;
-  cursor: pointer;
-  }
-
   .join__icon {
   fill: #F5F4FA;
   }
+
+
 
  
 
