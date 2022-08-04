@@ -1904,7 +1904,7 @@ ul {
   display: none;
 }
 
-.mobile-menu {
+.mobile-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1919,8 +1919,6 @@ ul {
           justify-content: flex-start;
   width: 100%;
   margin-bottom: 302px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -1928,31 +1926,31 @@ ul {
   color: #212121;
 }
 
-.mobile-menu__item {
+.mobile-link__item {
   text-align: left;
 }
-.mobile-menu__item:not(:last-child) {
+.mobile-link__item:not(:last-child) {
   margin-bottom: 32px;
 }
-.mobile-menu__item:hover, .mobile-menu__item:focus {
+.mobile-link__item:hover, .mobile-link__item:focus {
   color: var(--third-color);
 }
 
-.mobile-menu__link {
+.ref {
   text-decoration: none;
   color: #212121;
 }
 
-.menu__link--current {
+.ref--current {
   color: var(--third-color);
 }
 
-.mobile-menu__contacts {
+.mobile-contacts {
   margin-bottom: 64px;
   padding: 0px;
 }
 
-.mobile-menu__contacts-item-tel {
+.mobile-contacts__tel {
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 34px;
@@ -1960,44 +1958,44 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.mobile-menu__contacts-item-mail {
+.mobile-contacts__post {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
 }
 
-.mobile-menu__contacts-tel,
-.mobile-menu__contacts-mail {
+.mobile-contacts__number,
+.mobile-contacts__mail {
   color: #757575;
   text-decoration: none;
   cursor: pointer;
 }
 
-.mobile-menu__contacts-tel {
+.mobile-contacts__number {
   color: #2196F3;
 }
 
-.mobile-menu__contacts-tel:hover,
-.mobile-menu__contacts-tel:focus,
-.mobile-menu__contacts-mail:hover,
-.mobile-menu__contacts-mail:focus {
+.mobile-contacts__number:hover,
+.mobile-contacts__number:focus,
+.mobile-contacts__mail:hover,
+.mobile-contacts__mail:focus {
   color: var(--third-color);
 }
 
-.mobile-menu__network {
+.mobile-network {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.network-item:not(:last-child) {
+.mobile-network__item:not(:last-child) {
   padding-right: 9px;
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.mobile-menu__network-item {
+.mobile-network__ref {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
