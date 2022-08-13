@@ -9,11 +9,11 @@
   margin: 0 auto;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-  url(/images/img-hero/Header-img2x_480.jpg);
+  url(/images/img-hero/Header-img_480.jpg);
  
   // Для екранів mobile
   @media screen and (max-width: 767px) {
-   max-width: 480px; 
+      max-width: 480px; 
   }
 
   @media (min-device-pixel-ratio: 2),
