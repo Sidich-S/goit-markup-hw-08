@@ -895,12 +895,12 @@ ul {
 }
 
 .footer {
+  background-color: var(--basic-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer__block {
-  background-color: var(--basic-background-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,8 +956,6 @@ ul {
 
 .address {
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 60px;
 }
 @media screen and (max-width: 767px) {
   .address {
@@ -1177,7 +1175,6 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
