@@ -50,16 +50,15 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-   }
-
-
-  &:last-child {
-  margin-right: 0px;
   }
 }
 
 .nav__list .nav__item {
   margin-right: 50px;
+  
+   &:last-child {
+  margin-right: 0px;
+  }
 }
 
 

@@ -4,9 +4,10 @@
 }
 
 .footer__block {
+  background-color: var( --basic-background-color);
   display: flex;
   align-items: baseline;
-
+  
 @media screen and (max-width: 767px) {
      display: flex;
      flex-direction: column;
@@ -14,7 +15,7 @@
      align-items: center;
     }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
@@ -28,6 +29,11 @@
      align-content: center;
      align-items: center;
      }
+
+// @media screen and (max-width: 767px) {
+
+
+// }
 
      
 }

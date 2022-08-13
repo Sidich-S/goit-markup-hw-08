@@ -37,13 +37,13 @@
             <ul class="contacts">
                 <li class="contacts__item">
                     <a class="contacts__link contacts__mail" href="mailto:info@devstudio.com">
-                        <svg class="contacts__icon" width="16" height="12">
+                        <svg class="contacts__icon contacts__icon--mail" width="16" height="12">
                             <use href="images/icon.svg#icon-mail"></use>
                         </svg> info@devstudio.com </a>
                 </li>
                 <li class="contacts-item">
                     <a class="contacts__link" href="tel:+380961111111">
-                        <svg class="contacts__icon" width="10" height="16">
+                        <svg class="contacts__icon contacts__icon--tel" width="10" height="16">
                             <use href="images/icon.svg#icon-mobile"></use>
                         </svg> +38 096 111 11 11 </a>
                 </li>
@@ -604,6 +604,61 @@
             </div>
         </div>
     </footer>
+
+ <!-- ? hiddenmenu -->
+    <div class="hiddenmenu js-menu-container" id="mobile-menu">
+
+       <button type="button" class="menu-toggle js-close-menu">
+          <svg class="menu-toggle__icon" width="40" height="40">
+              <use class="icon-close" href="./images/icon.svg#icon-close_24px"></use>
+          </svg>
+      </button>
+                 
+             <ul class="mobile-link">
+                <li class="mobile-link__item">
+                    <a href="index.html" class="ref">Студія</a>
+                </li>
+                <li class="mobile-link__item">
+                     <a href="portfolio.html" class="ref ref--current">Портфоліо</a>
+                </li> 
+                <li class="mobile-link__item">
+                    <a href="/" class="ref">Контакти</a>
+                </li>
+             </ul>
+         
+             <ul class="mobile-contacts">
+                <li class="mobile-contacts__tel">  
+                  <a class="mobile-contacts__number" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-contacts__post">
+                     <a class="mobile-contacts__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+             </ul>
+          
+             <ul class="mobile-network">
+               <li class="mobile-network__item">
+                 <a class="mobile-network__ref" href="instagram">instagram</a>
+               </li>
+               <li class="mobile-network__item">
+                 <a class="mobile-network__ref" href="twitter">twitter</a>
+               </li>
+               <li class="mobile-network__item">
+                  <a class="mobile-network__ref" href="facebook">facebook</a>
+                </li>
+               <li class="mobile-network__item">
+                  <a class="mobile-network__ref" href="linkedin">linkedin</a>
+               </li>
+            </ul>
+          
+    </div>
+
+
+     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+    </script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 
 </body>
 

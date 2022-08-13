@@ -10,11 +10,11 @@
 :root {
   --basic-font-family: 'Roboto';
 
-  --basiс-background-color: #2f303a;
+  --basic-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
   --third-background-color: #2196f3;
 
-  --basiс-color: #757575;
+  --basic-color: #757575;
   --secondary-color: black;
   --third-color: #2196f3;
   --final-color: #ffffff;
@@ -68,6 +68,7 @@ margin-right: 30px;
   font-family: var(--basic-font-family);
   color: var(--secondary-color);
 
+  width: 100%;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 50px;
